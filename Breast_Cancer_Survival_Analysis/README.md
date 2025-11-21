@@ -44,6 +44,6 @@ This project analyzes the Breast Cancer dataset from Kaggle to understand which 
 
 - This suggests survival outcomes cannot be easily separated in low-dimensional space and require more complex modeling.
 
-# Conclusion
+## Conclusion
 
 The dataset is clean, clinically rich, and suitable for prediction tasks. Survival is influenced by a combination of tumor characteristics, age, and staging features. These insights prepare the data for the next phase: feature engineering and model development.
