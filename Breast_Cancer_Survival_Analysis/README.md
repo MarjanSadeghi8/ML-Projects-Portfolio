@@ -4,45 +4,45 @@ This project analyzes the Breast Cancer dataset from Kaggle to understand which 
 
 # Dataset Overview
 
-4,023 unique patient records
+- 4,023 unique patient records
 
-Features include: age, tumor size, grade, lymph node status, hormone receptor status, and survival months
+- Features include: age, tumor size, grade, lymph node status, hormone receptor status, and survival months
 
-No missing values
+- No missing values
 
-One duplicate removed
+- One duplicate removed
 
-Highly imbalanced race distribution → Race feature dropped
+- Highly imbalanced race distribution → Race feature dropped
 
-Key Cleaning Steps
+# Key Cleaning Steps
 
-Removed redundant or highly correlated features:
+- Removed redundant or highly correlated features:
 
-T Stage (overlaps with Tumor Size)
+  - T Stage (overlaps with Tumor Size)
 
-Progesterone Status (overlaps with Estrogen Status)
+  - Progesterone Status (overlaps with Estrogen Status)
 
-differentiate (overlaps with Grade)
+  - differentiate (overlaps with Grade)
 
-Encoded categorical variables
+  - Encoded categorical variables
 
-Standardized numeric features
+  - Standardized numeric features
 
 # Main Insights
 
-Tumor size and tumor grade strongly relate to survival—larger or higher-grade tumors show worse outcomes.
+- Tumor size and tumor grade strongly relate to survival—larger or higher-grade tumors show worse outcomes.
 
-Age also affects survival; deceased patients tend to be older.
+- Age also affects survival; deceased patients tend to be older.
 
-Lymph node features (N Stage, Regional Node Positive) show moderate correlation with survival and reflect disease severity.
+- Lymph node features (N Stage, Regional Node Positive) show moderate correlation with survival and reflect disease severity.
 
-Correlation heatmap shows no single dominant predictor, indicating survival depends on multiple interacting factors.
+- Correlation heatmap shows no single dominant predictor, indicating survival depends on multiple interacting factors.
 
 # UMAP Visualization
 
-Both unsupervised and supervised UMAP projections show overlapping clusters between Alive and Dead patients.
+- Both unsupervised and supervised UMAP projections show overlapping clusters between Alive and Dead patients.
 
-This suggests survival outcomes cannot be easily separated in low-dimensional space and require more complex modeling.
+- This suggests survival outcomes cannot be easily separated in low-dimensional space and require more complex modeling.
 
 # Conclusion
 
