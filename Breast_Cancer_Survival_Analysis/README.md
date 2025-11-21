@@ -2,7 +2,7 @@
 
 This project analyzes the Breast Cancer dataset from Kaggle to understand which clinical and demographic factors influence patient survival status (Alive vs. Dead).
 
-# Dataset Overview
+## Dataset Overview
 
 - 4,023 unique patient records
 
@@ -14,7 +14,7 @@ This project analyzes the Breast Cancer dataset from Kaggle to understand which 
 
 - Highly imbalanced race distribution → Race feature dropped
 
-# Key Cleaning Steps
+## Key Cleaning Steps
 
 - Removed redundant or highly correlated features:
 
@@ -28,7 +28,7 @@ This project analyzes the Breast Cancer dataset from Kaggle to understand which 
 
   - Standardized numeric features
 
-# Main Insights
+## Main Insights
 
 - Tumor size and tumor grade strongly relate to survival—larger or higher-grade tumors show worse outcomes.
 
@@ -38,7 +38,7 @@ This project analyzes the Breast Cancer dataset from Kaggle to understand which 
 
 - Correlation heatmap shows no single dominant predictor, indicating survival depends on multiple interacting factors.
 
-# UMAP Visualization
+## UMAP Visualization
 
 - Both unsupervised and supervised UMAP projections show overlapping clusters between Alive and Dead patients.
 
